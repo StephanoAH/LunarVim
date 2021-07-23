@@ -1,1 +1,1 @@
-require("lsp").setup(O.lang.svelte.lsp)
+require("lsp").setup(LV.lang.svelte.lsp)

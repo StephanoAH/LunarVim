@@ -1,3 +1,3 @@
-require("core.formatter").setup_local "vue"
+require("core.formatter").setup_local("vue")
 
-require("lsp").setup(O.lang.vue.lsp)
+require("lsp").setup(LV.lang.vue.lsp)

@@ -1,3 +1,3 @@
-require("core.formatter").setup "zig"
+require("core.formatter").setup("zig")
 
-require("lsp").setup(O.lang.zig.lsp)
+require("lsp").setup(LV.lang.zig.lsp)

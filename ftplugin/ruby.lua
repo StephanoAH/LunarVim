@@ -1,8 +1,8 @@
-require("core.formatter").setup "ruby"
+require("core.formatter").setup("ruby")
 
 require("lint").linters_by_ft = {
-  ruby = O.lang.ruby.linters,
+	ruby = LV.lang.ruby.linters,
 }
 
 -- also support sorbet
-require("lsp").setup(O.lang.ruby.lsp)
+require("lsp").setup(LV.lang.ruby.lsp)

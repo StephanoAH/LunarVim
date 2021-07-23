@@ -1,1 +1,1 @@
-require("lsp").setup(O.lang.json.lsp)
+require("lsp").setup(LV.lang.json.lsp)

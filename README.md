@@ -74,15 +74,15 @@ Example:
 
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 -- general
--- O.format_on_save = false -- to disbale formatting on save
--- O.lint_on_save = false -- to disable formatting on save
-O.completion.autocomplete = true
-O.colorscheme = 'spacegray'
+-- LV.format_on_save = false -- to disbale formatting on save
+-- LV.lint_on_save = false -- to disable formatting on save
+LV.completion.autocomplete = true
+LV.colorscheme = 'spacegray'
 
 -- keymappings 
-O.keys.leader_key = "space"
+LV.keys.leader_key = "space"
 -- overwrite the key-mappings provided by LunarVim for any mode, or leave it empty to keep them
-O.keys.normal_mode = {
+LV.keys.normal_mode = {
     -- Page down/up
   {'[d', '<PageUp>'},
   {']d', '<PageDown>'},
@@ -97,17 +97,17 @@ require("lv-utils").add_keymap_insert_mode({ silent = true }, {
 vim.api.nvim_set_keymap("i", "<C-Space>", "compe#complete()", { noremap = true, silent = true, expr = true })
 
 -- After changing plugin config it is recommended to run :PackerCompile
-O.plugin.dashboard.active = true
-O.plugin.terminal.active = true
+LV.plugin.dashboard.active = true
+LV.plugin.terminal.active = true
 
 -- if you don't want all the parsers change this to a table of the ones you want
-O.treesitter.ensure_installed = "all"
-O.treesitter.ignore_install = {"haskell"}
-O.treesitter.highlight.enabled = true
+LV.treesitter.ensure_installed = "all"
+LV.treesitter.ignore_install = {"haskell"}
+LV.treesitter.highlight.enabled = true
 
 -- you can set a custom on_attach function that will be used for all the language servers
 -- See <https://github.com/neovim/nvim-lspconfig#keybindings-and-completion>
--- O.lsp.on_attach_callback = function(client, bufnr)
+-- LV.lsp.on_attach_callback = function(client, bufnr)
 --   local function buf_set_option(...)
 --     vim.api.nvim_buf_set_option(bufnr, ...)
 --   end
@@ -116,30 +116,30 @@ O.treesitter.highlight.enabled = true
 -- end
 
 -- lua
-O.lang.lua.autoformat = false
-O.lang.lua.formatter = 'lua-format'
+LV.lang.lua.autoformat = false
+LV.lang.lua.formatter = 'lua-format'
 
 -- javascript
-O.lang.tsserver.formatter = 'prettier'
-O.lang.tsserver.linter = nil
-O.lang.tsserver.autoformat = true
+LV.lang.tsserver.formatter = 'prettier'
+LV.lang.tsserver.linter = nil
+LV.lang.tsserver.autoformat = true
 
 -- python
-O.lang.python.diagnostics.virtual_text = true
-O.lang.python.analysis.use_library_code_types = true
+LV.lang.python.diagnostics.virtual_text = true
+LV.lang.python.analysis.use_library_code_types = true
 -- to change default formatter from yapf to black
--- O.lang.python.formatter.exe = "black"
--- O.lang.python.formatter.args = {"-"}
+-- LV.lang.python.formatter.exe = "black"
+-- LV.lang.python.formatter.args = {"-"}
 -- To change enabled linters
 -- https://github.com/mfussenegger/nvim-lint#available-linters
--- O.lang.python.linters = { "flake8", "pylint", "mypy", ... }
+-- LV.lang.python.linters = { "flake8", "pylint", "mypy", ... }
 
 -- go
 -- to change default formatter from gofmt to goimports
--- O.lang.formatter.go.exe = "goimports"
+-- LV.lang.formatter.go.exe = "goimports"
 
 -- Additional Plugins
--- O.plugins = {
+-- LV.plugins = {
 --   {"folke/tokyonight.nvim"},
 --   {
 --     "ray-x/lsp_signature.nvim",
@@ -153,7 +153,7 @@ O.lang.python.analysis.use_library_code_types = true
 -- }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
--- O.autocommands = {{ "BufWinEnter", "*", "echo \"hi again\""}}
+-- LV.autocommands = {{ "BufWinEnter", "*", "echo \"hi again\""}}
 
 -- TODO Additional Leader bindings for WhichKey
 

@@ -1,3 +1,3 @@
-require("core.formatter").setup "swift"
+require("core.formatter").setup("swift")
 
-require("lsp").setup(O.lang.swift.lsp)
+require("lsp").setup(LV.lang.swift.lsp)

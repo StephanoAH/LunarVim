@@ -1,1 +1,1 @@
-require("lsp").setup(O.lang.docker.lsp)
+require("lsp").setup(LV.lang.docker.lsp)

@@ -1,7 +1,7 @@
-require("core.formatter").setup "lua"
+require("core.formatter").setup("lua")
 
-require("lsp").setup(O.lang.lua.lsp)
+require("lsp").setup(LV.lang.lua.lsp)
 
 require("lint").linters_by_ft = {
-  lua = O.lang.lua.linters,
+	lua = LV.lang.lua.linters,
 }

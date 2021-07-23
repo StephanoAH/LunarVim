@@ -1,3 +1,3 @@
-require("core.formatter").setup "php"
+require("core.formatter").setup("php")
 
-require("lsp").setup(O.lang.php.lsp)
+require("lsp").setup(LV.lang.php.lsp)

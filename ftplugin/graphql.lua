@@ -1,1 +1,1 @@
-require("lsp").setup(O.lang.graphql.lsp)
+require("lsp").setup(LV.lang.graphql.lsp)

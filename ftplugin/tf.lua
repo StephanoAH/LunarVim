@@ -1,5 +1,5 @@
-require("core.formatter").setup "terraform"
-O.formatters.filetype["tf"] = O.formatters.filetype["terraform"]
-O.formatters.filetype["hcl"] = O.formatters.filetype["terraform"]
+require("core.formatter").setup("terraform")
+LV.formatters.filetype["tf"] = LV.formatters.filetype["terraform"]
+LV.formatters.filetype["hcl"] = LV.formatters.filetype["terraform"]
 
-require("lsp").setup(O.lang.terraform.lsp)
+require("lsp").setup(LV.lang.terraform.lsp)
