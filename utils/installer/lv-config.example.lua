@@ -1,5 +1,5 @@
 --[[
-O is the global options object
+LV is the global options object
 
 Linters should be
 filled in as strings with either
