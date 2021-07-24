@@ -14,7 +14,7 @@ M.setup = function()
   vim.o.termguicolors = true
 
   g.nvim_tree_side = "left"
-  g.nvim_tree_width = 30
+  g.nvim_tree_width = 20
   g.nvim_tree_ignore = { ".git", "node_modules", ".cache" }
   g.nvim_tree_auto_open = 1
   g.nvim_tree_auto_close = 1
@@ -58,10 +58,21 @@ M.setup = function()
   }
   local tree_cb = nvim_tree_config.nvim_tree_callback
 
+  vim.api.nvim_set_keymap(
+      "n",
+      "<C-b>",
+      ":NvimTreeToggle<CR>",
+      {
+          noremap = true,
+          silent = true
+      }
+  )
+
   vim.g.nvim_tree_bindings = {
     { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
     { key = "h", cb = tree_cb "close_node" },
     { key = "v", cb = tree_cb "vsplit" },
+    { key = "x", cb = tree_cb "split" },
   }
 end
 

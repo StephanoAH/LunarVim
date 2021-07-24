@@ -51,6 +51,9 @@ local mappings = {
     { "[q", ":cprev<CR>" },
 
     -- {'<C-TAB>', 'compe#complete()', {noremap = true, silent = true, expr = true}},
+
+    -- Clear search highlight
+    { "<C-c>", "<cmd>noh<CR>"}
   },
   t = { -- Terminal mode
     -- Terminal window navigation

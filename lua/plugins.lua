@@ -70,6 +70,7 @@ return require("packer").startup(function(use)
 
   use { "hrsh7th/vim-vsnip", event = "InsertEnter" }
   use { "rafamadriz/friendly-snippets", event = "InsertEnter" }
+  use {"dsznajder/vscode-es7-javascript-react-snippets",  event = "InsertEnter" }
 
   -- Treesitter
   use {
