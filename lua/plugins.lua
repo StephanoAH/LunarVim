@@ -66,6 +66,15 @@ return require("packer").startup(function(use)
     end,
   }
 
+  -- Rainbow parentheses
+  use {"p00f/nvim-ts-rainbow"}
+
+  -- Emmet 
+  use {"mattn/emmet-vim"}
+
+  -- Rest console
+  use {"diepm/vim-rest-console"}
+
   -- Snippets
 
   use { "hrsh7th/vim-vsnip", event = "InsertEnter" }
